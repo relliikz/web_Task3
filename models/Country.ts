@@ -1,13 +1,15 @@
-import { Result } from './Result';
+import { IResult } from './IResult';
 import { Medals } from './Medals.enum';
 
 export class Country {
   // TODO: Country requires a name attribute and a results attribute.
   // name is a string, results is an array of Result
-  
+  name: String;
+  results: IResult[];
   // TODO: receives a name and initialises the results array to an empty array
   constructor(name: string) {
-    
+    this.name = name;
+    this.results = [];
   }
 
   // return the total number of medals
@@ -15,10 +17,8 @@ export class Country {
     //TODO: complete
   }
 
-
   // given a medal type, return the amount of that type of medal
   totalMedalType(medal: Medals): number {
     // TODO:
   }
-
 }
