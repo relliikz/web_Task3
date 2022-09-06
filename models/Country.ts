@@ -15,10 +15,16 @@ export class Country {
   // return the total number of medals
   totalMedals(): number {
     //TODO: complete
+    let total: number = this.results.length;
+    return total;
   }
 
   // given a medal type, return the amount of that type of medal
   totalMedalType(medal: Medals): number {
     // TODO:
+    let total:number = 0;
+    for(let i = 0; i< this.results.length; i++){
+      if(this.results)
+    }
   }
 }
